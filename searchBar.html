@@ -8,26 +8,85 @@
 </head>
 <body>
     <div class="container">
-        <input id="searchbar" onkeyup="search_product()" type="text" name="searchbar" placeholder="Search products..">
+        <input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Search products..">
 
         <!--demolist-->
-        <ul id="list" class="list-group">
-            <li class="products" class="list-group-items">
-             hamburger
+        <ul id='list' class="list-group">
+            <li class="list-group-item products">
+             Hamburger
             </li>
-            <li class="products" class="list-group-items">
-             hotdog
+            <li class="list-group-item products">
+             Hotdog
             </li>
-            <li class="products" class="list-group-items">
-             fries
+            <li class="list-group-item products">
+             Fries
             </li>
-            <li class="products" class="list-group-items">
-             palabok
+            <li class="list-group-item products">
+             Palabok
             </li>
-            <li class="products" class="list-group-items">
-             chicken
+            <li class="list-group-item products">
+             Chicken
+            </li>
+            <li class="list-group-item products">
+             Burrito
+            </li>
+            <li class="list-group-item products">
+             Lasagna
+            </li>
+            <li class="list-group-item products">
+             Pizza
+            </li>
+            <li class="list-group-item products">
+             Siomai
+            </li>
+            <li class="list-group-item products">
+             Carbonara
+            </li>
+            <li class="list-group-item products">
+             Spaghetti
+            </li>
+            <li class="list-group-item products">
+             Coffee
+            </li>
+            <li class="list-group-item products">
+             Ice Cream
+            </li>
+            <li class="list-group-item products">
+             Chicken Pesto
+            </li>
+            <li class="list-group-item products">
+             Salad
+            </li>
+            <li class="list-group-item products">
+             Kebab
+            </li>
+            <li class="list-group-item products">
+             Shawarma
+            </li>
+            <li class="list-group-item products">
+             Burger Steak
+            </li>
+            <li class="list-group-item products">
+             Grilled Sausage
             </li>
         </ul>
     </div>
+    <script src="product.js"></script>
+
+    <!-- <script>
+        function search_product() {
+            let input = document.getElementById('searchbar').value.toLowerCase();
+            let products = document.getElementsByClassName('products');
+
+            for (let i = 0; i < products.length; i++) {
+                let productName = products[i].textContent.toLowerCase();
+                if (!productName.includes(input)) {
+                    products[i].style.display = "none";
+                } else {
+                    products[i].style.display = "list-item";
+                }
+            }
+        }
+    </script> -->
 </body>
 </html>
